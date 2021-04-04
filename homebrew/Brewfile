@@ -1,0 +1,168 @@
+################################################################################
+# Prerequisites
+################################################################################
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+
+################################################################################
+# Applications
+################################################################################
+
+# Java
+cask "adoptopenjdk8"                            # AdoptOpenJDK 8
+
+# Basics
+cask "google-chrome"                            # Cross-platform web browser
+cask "iterm2"                                   # Terminal emulator as alternative to Apple's Terminal app
+
+# Encryption
+brew "gnupg"                                    # GNU Pretty Good Privacy (PGP) package
+cask "keybase"                                  # End-to-end encryption software
+
+################################################################################
+# Utilities
+################################################################################
+
+brew "curl"
+brew "htop"
+brew "openssl"
+brew "parquet-tools"
+brew "pkg-config"
+brew "the_silver_searcher"
+brew "watch"
+brew "wget"
+brew "zsh"
+
+################################################################################
+# Development
+################################################################################
+
+# Version control
+brew "git"                                      # Distributed revision control system
+brew "git-secret"                               # Bash-tool to store the private data inside a git repo
+brew "gh"                                       # GitHub command-line tool
+brew "tig"                                      # Text interface for Git repositories
+
+# Java
+cask "visualvm"                                 # JVM visualiser
+brew "maven"                                    # Java-based project management
+brew "gradle"                                   # Open-source build automation tool based on the Groovy and Kotlin DSL
+cask "java8"
+
+# Scala
+brew "sbt"                                      # Build tool for Scala projects
+brew "scala"                                    # JVM-based programming language
+
+# Python
+brew "python"
+brew "python@2"
+brew "python@3.8"
+
+# Dokcker
+brew "docker-compose"
+brew "lazydocker"
+
+# AWS 
+brew "aws-iam-authenticator"
+brew "awscli"
+
+# Spark
+brew "apache-spark"
+brew "spark"
+
+# Heroku
+brew "heroku"
+brew "heroku-node"
+
+# Kafka
+brew "kafka"
+brew "kafkacat"
+
+# Kubernetes
+brew "k9s"
+brew "kubernetes-cli"
+
+# SQL
+cask "mysql-shell"
+cask "sequel-pro"
+brew "sqlite"
+
+# Terraform
+brew "terraform"
+
+################################################################################
+# Other
+################################################################################
+
+brew "adns"
+brew "avro-c"
+brew "boost"
+brew "entr"
+brew "exercism"
+brew "freetype"
+brew "gawk"
+brew "gdbm"
+brew "gettext"
+brew "glew"
+brew "gmp"
+brew "gnu-sed"
+brew "gnupg"
+brew "gnutls"
+brew "gource"
+brew "icu4c"
+brew "jansson"
+brew "jemalloc"
+brew "jenv"
+brew "jpeg"
+brew "jq"
+brew "leiningen"
+brew "libassuan"
+brew "libevent"
+brew "libffi"
+brew "libgcrypt"
+brew "libgpg-error"
+brew "libidn2"
+brew "libksba"
+brew "libpng"
+brew "librdkafka"
+brew "libserdes"
+brew "libtasn1"
+brew "libtermkey"
+brew "libtiff"
+brew "libunistring"
+brew "libusb"
+brew "libuv"
+brew "libvterm"
+brew "libyaml"
+brew "luajit"
+brew "lz4"
+brew "lzlib"
+brew "mpfr"
+brew "msgpack"
+brew "ncurses"
+brew "neovim"
+brew "nettle"
+brew "npth"
+brew "oniguruma"
+brew "p11-kit"
+brew "pcre"
+brew "pcre2"
+brew "pinentry"
+brew "readline"
+brew "sdl2"
+brew "sdl2_image"
+brew "shellcheck"
+brew "snappy"
+brew "tfenv"
+brew "tree"
+brew "unbound"
+brew "unibilium"
+brew "webp"
+brew "xz"
+brew "yajl"
+brew "zoe"
+brew "zookeeper"
+brew "zstd"
+cask "blackhole-16ch"

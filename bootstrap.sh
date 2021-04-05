@@ -12,34 +12,13 @@ setopt EXTENDED_GLOB
 
 # Files to link to in $HOME
 FILES=(
-    "boot/.boot"
-    "ctags/.ctags"
-    "ssh/.ssh"
-    "chemacs/.emacs-profiles.el"
-    "doom/.doom.d"
-    "git/.gitconfig"
-    "k9s/.k9s"
-    "git/.githooks"
-    "nethack/.nethackrc"
-    "leiningen/.lein"
-    "proselint/.proselintrc"
-    "pylint/.pylintrc"
-    "tig/.tigrc"
-    "tmux/.tmux.conf"
-    "zsh/.bashrc"
     "zsh/.commonrc"
     "zsh/.zsh-completion"
     "zsh/.zshrc"
-    "zsh/.zshrc.$(uname -n)"
-    "zsh/.zshrc.no-commit"
-    "zsh/.zshrc.darwin"
-    "zsh/.zshrc.linux"
 )
 
 # Files to link to in $HOME/.config
 CONFIG_DIRS=(
-    "yamllint/yamllint"
-    "tmuxinator/tmuxinator"
 )
 
 RED='\033[0;31m'

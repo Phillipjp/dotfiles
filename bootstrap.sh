@@ -15,6 +15,8 @@ FILES=(
     "zsh/.commonrc"
     "zsh/.zsh-completion"
     "zsh/.zshrc"
+    "git/.gitconfig"
+    "ssh/.ssh"
 )
 
 # Files to link to in $HOME/.config

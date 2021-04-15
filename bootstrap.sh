@@ -105,5 +105,5 @@ create-links-for-files ~/trash         "$FILES[@]"
 # mkdir -p $HOME/.config/
 # create-links-for-files $HOME/.config "$CONFIG_DIRS[@]"
 
-# create-links-for-files-at-path ~/Dev/my-stuff     git/my-stuff
-# create-links-for-files-at-path ~/Dev/recommenders git/recommenders
+create-links-for-files-at-path ~/Dev/my-stuff     git/my-stuff
+create-links-for-files-at-path ~/Dev/work git/work

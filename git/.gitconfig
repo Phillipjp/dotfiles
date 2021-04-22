@@ -1,8 +1,14 @@
 # This is Git's per-user configuration file.
-[user]
-# Please adapt and uncomment the following lines:
-	name = Phillip Perks
-	email = p.perks@elsevier.com
+# [user]
+# # Please adapt and uncomment the following lines:
+# 	name = Phillip Perks
+# 	email = phillipjperks@gmail.com
+[includeIf "gitdir:~/Dev/work/"]
+   path = ~/Dev/work/.gitconfig
+
+[includeIf "gitdir:~/Dev/my-stuff/"]
+   path = ~/Dev/my-stuff/.gitconfig
+   
 [push]
     default = simple
 [alias]

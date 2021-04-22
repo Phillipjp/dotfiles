@@ -102,7 +102,7 @@ function create-links-for-files-at-path() {
 # Installation                                                              {{{1
 # ==============================================================================
 
-create-links-for-files ~/trash         "$FILES[@]"
+create-links-for-files ~         "$FILES[@]"
 
 # mkdir -p $HOME/.config/
 # create-links-for-files $HOME/.config "$CONFIG_DIRS[@]"

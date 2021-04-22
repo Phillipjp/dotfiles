@@ -12,17 +12,17 @@ fi
 
 # Customize to your needs...
 
-alias recs='cd ~/Dev/recs'
-alias recs-api='cd ~/Dev/recs/kd-recs-api'
-alias recs-infra='cd ~/Dev/recs/infra'
+alias cdt='cd ~/Dev/work/cdt'
 alias gpl='git pull'
 alias gp='git push'
-alias git-main='git checkout main'
+alias git-master='git checkout master'
 alias git-pr='gh pr create -f'
 alias "aws-which"="env | grep AWS | sort"
 alias "aws-clear-variables"="for i in \$(aws-which | cut -d= -f1,1 | paste -); do unset \$i; done"
-alias aws-recs-dev="aws-developer-role 975165675840  ADFS-Developer aws-rap-recommendersdev"
-alias aws-recs-prod="aws-developer-role 589287149623  ADFS-Developer aws-rap-recommendersprod"
+# alias aws-cdt-dev="aws-developer-role ACCOUNT_ID  ROLE PROFILE"
+# alias aws-cdt-prd="aws-developer-role ACCOUNT_ID  iROLE PROFILE"
+alias aws-cdt-dev="aws --profile=cd-dev"
+alias aws-cdt-prd="aws --profile=cd-prd"
 alias my-stuff="cd ~/Dev/my-stuff"
 
 
@@ -292,7 +292,8 @@ compdef _ssh scp-skeleton-config=ssh
 
 function aws-switch-role() {
     declare roleARN=$1 profile=$2
-    export username=perks1@science.regn.net
+    export username=phillip.perks@itv.com
+    # 
     LOGIN_OUTPUT="$(aws-adfs login --adfs-host federation.reedelsevier.com --region us-east-1 --role-arn $roleARN --env --profile $profile --printenv | grep export)"
     AWS_ENV="$(echo $LOGIN_OUTPUT | grep export)"
     eval $AWS_ENV
@@ -748,7 +749,7 @@ function recs-get-k8s() {
     fi
 }
 compdef "_arguments \
-    '1:environment arg:(dev live)' \
-    '2:sub-environment arg:(util main)'" \
-    recs-get-k8s
+#    '1:environment arg:(dev live)' \
+#    '2:sub-environment arg:(util main)'" \
+#    recs-get-k8s
 

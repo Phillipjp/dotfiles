@@ -1,3 +1,6 @@
 [user]
    name = Phillip Perks
    email = phillipjperks101@gmail.com
+
+[commit]
+        template = ~/.git-message.txt
